@@ -90,10 +90,11 @@
             }
             &-div {
                 display: flex;
+                align-items: center;
                 &>div {
                     width: 431px;
                     position: relative;
-                   
+                    opacity: 0.7;
                     height: 268px;
                     box-shadow: 0 0 30px rgb(0,0,0,0.5);
                     border-radius: 20px;
@@ -135,8 +136,11 @@
         display: none;
     }
     &~.section-body-photo-div>div:nth-child(1) {
+        width: 502px;
+        height: 314px;
         z-index: 2;
         margin: 0 -170px 0 0;
+        opacity: 1;
     }
 }
 
@@ -145,8 +149,11 @@
         display: none;
     }
     &~.section-body-photo-div>div:nth-child(2) {
+        width: 502px;
+        height: 314px;
         z-index: 2;
         margin: 0 -170px;
+        opacity: 1;
     }
 }
 
@@ -155,8 +162,11 @@
         display: none;
     }
     &~.section-body-photo-div>div:nth-child(3) {
+        width: 502px;
+        height: 314px;
         z-index: 2;
         margin: 0 0 0 -170px;
+        opacity: 1;
     }
     &~.section-body-photo-div {
         margin-right: 70px;
