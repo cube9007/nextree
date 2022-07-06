@@ -7,19 +7,19 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build2": "react-scripts build",
-    "predistadd": "git add dist -f",
-    "distadd": "git commit -m 'dist'",
+    "predist": "git add dist -f",
+    "dist": "git commit -m 'dist'",
     "deploy": "git subtree push --prefix dist origin gh-pages"
-
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.7",
     "gh-pages": "^4.0.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.53.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

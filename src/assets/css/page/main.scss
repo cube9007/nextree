@@ -1,0 +1,164 @@
+.section {
+    height: 100vh;
+    width: 100vw;
+    &-img {
+        position: absolute;
+        z-index: -3;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        background-image: url(/src/assets/img/bg.png);
+    }
+    &-header {
+        position: absolute;
+        width: calc( 100% - 200px );
+        padding: 45px 100px;
+        &-logo {
+            width: 100px;
+        }
+        &-menu {
+            &>a:not(:last-child) {
+                margin-right: 50px;
+            }
+            &>a {
+                color: white;
+                width: 90px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        &-icon {
+            width: 100px;
+        }
+    }
+    &-body {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        padding: 0 150px;
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &-desc {
+            max-width: 700px;
+            margin-right: 100px;
+            &-head {
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+            &-m {
+                margin-bottom: 10px;
+            }
+            &-s {
+                margin-bottom: 80px;
+            }
+        }
+        &-photo {
+            &-arrowLeft{
+                margin-right: 20px;
+                width: 50px;
+                height: 50px;
+                border: 1px solid $white;
+                border-radius: 50px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(/src/assets/img/arrowLeft.png);
+                transition: 0.5s;
+                &:hover {
+                    background-image: url(/src/assets/img/arrowLeftBlack.png);
+                    background-color: white;
+                }
+            }
+            &-arrowRight{
+                margin-left: 20px;
+                transform: rotate(180deg);
+                width: 50px;
+                height: 50px;
+                border: 1px solid $white;
+                border-radius: 50px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(/src/assets/img/arrowLeft.png);
+                transition: 0.5s;
+                &:hover {
+                    background-image: url(/src/assets/img/arrowLeftBlack.png);
+                    background-color: white;
+                }
+            }
+            &-div {
+                display: flex;
+                &>div {
+                    width: 431px;
+                    position: relative;
+                   
+                    height: 268px;
+                    box-shadow: 0 0 30px rgb(0,0,0,0.5);
+                    border-radius: 20px;
+                    transition: 1s;
+                }
+                &>div:nth-child(1) {
+                    z-index: 0;
+                    margin: 0 -190px 0 0;
+                }
+                &>div:nth-child(2) {
+                    z-index: 1;
+                    margin: 0 -190px;
+                }
+                &>div:nth-child(3) {
+                    z-index: 0;
+                    margin: 0 0 0 -190px;
+                }
+            }
+            &-1{
+               
+                background-image: url(/src/assets/img/photo1.png);
+            }
+            &-2{
+                background-image: url(/src/assets/img/photo2.png);
+            }
+            &-3{
+                background-image: url(/src/assets/img/photo3.png);
+            }
+        }
+    }
+}
+
+.radio {
+    display: none;
+}
+
+.radio1:checked {
+    &~.label-2,~.label-1,~.label-4 {
+        display: none;
+    }
+    &~.section-body-photo-div>div:nth-child(1) {
+        z-index: 2;
+        margin: 0 -170px 0 0;
+    }
+}
+
+.radio2:checked {
+    &~.label-2,~.label-3 {
+        display: none;
+    }
+    &~.section-body-photo-div>div:nth-child(2) {
+        z-index: 2;
+        margin: 0 -170px;
+    }
+}
+
+.radio3:checked {
+    &~.label-4,~.label-3,~.label-1 {
+        display: none;
+    }
+    &~.section-body-photo-div>div:nth-child(3) {
+        z-index: 2;
+        margin: 0 0 0 -170px;
+    }
+    &~.section-body-photo-div {
+        margin-right: 70px;
+    }
+}

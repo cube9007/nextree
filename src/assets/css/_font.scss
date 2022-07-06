@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.f {
+    &-logo {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &-visual {
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 100%;
+    }
+    &-h {
+        &-1 {
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        &-2 {
+            font-size: 44px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        &-3 {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        &-4 {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        &-5 {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+        &-6 {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 130%;
+        }
+    }
+    &-m {
+        &-1 {
+            font-size: 24px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-2 {
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-3 {
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-4 {
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+
+        &-1e {
+            font-size: 24px;
+            line-height: 130%;
+        }
+        &-2e {
+            font-size: 20px;
+            line-height: 130%;
+        }
+        &-3e {
+            font-size: 18px;
+            line-height: 130%;
+        }
+        &-4e {
+            font-size: 16px;
+            line-height: 130%;
+        }
+    }
+    &-b {
+        &-1 {
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-2 {
+            font-size: 13px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-3 {
+            font-size: 12px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-1e {
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-2e {
+            font-size: 13px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+        &-3e {
+            font-size: 12px;
+            line-height: 130%;
+            letter-spacing: -3%;
+        }
+    }
+    &-btn {
+        &-1 {
+            font-size: 15px;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+        &-2 {
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+        &-3 {
+            font-size: 13px;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+        &-1b {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+        &-2b {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+        &-3b {
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 130%;
+            letter-spacing: -3%;
+            font-weight: 500;
+        }
+    }
+}
